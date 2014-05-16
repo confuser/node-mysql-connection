@@ -1,0 +1,44 @@
+{
+  "name": "mysql-connection",
+  "version": "0.0.1",
+  "description": "An abstraction of mysql2 pooling for simple queries",
+  "main": "db.js",
+  "directories": {
+    "test": "test"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint .",
+    "pretest": "npm run-script lint",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive -R spec",
+    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
+    "prepublish": "npm test && npm prune"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:confuser/node-mysql-connection"
+  },
+  "keywords": [
+    "mysql",
+    "simple",
+    "query",
+    "connection"
+  ],
+  "author": "James Mortemore <jamesmortemore@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/confuser/node-mysql-connection/issues"
+  },
+  "dependencies": {
+    "mysql2": "^0.12.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "istanbul": "~0.1.44",
+    "async": "~0.2.9",
+    "should": "2",
+    "jshint": "~2.3.0"
+  }
+}
