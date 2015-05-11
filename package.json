@@ -40,6 +40,7 @@
     "jscs": "1",
     "jshint": "2",
     "jshint-full-path": "0",
-    "mocha": "2"
+    "mocha": "2",
+    "mysql2": "^0.15.6"
   }
 }
