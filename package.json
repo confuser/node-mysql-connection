@@ -1,6 +1,6 @@
 {
   "name": "mysql-connection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An abstraction of mysql2 pooling for simple queries",
   "main": "db.js",
   "directories": {
