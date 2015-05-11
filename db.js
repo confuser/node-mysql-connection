@@ -1,8 +1,6 @@
-var mysql = require('mysql2')
-
 module.exports = Db
 
-function Db (settings) {
+function Db (mysql, settings) {
   this._pool = mysql.createPool(settings)
 }
 
@@ -24,8 +22,8 @@ Db.prototype.query = function (sql, params, cb) {
   })
 }
 
-Object.defineProperty(Db.prototype, 'pool',
-  { get: function() {
+Object.defineProperty(Db.prototype, 'pool'
+  , { get: function() {
       return this._pool
     }
   })
