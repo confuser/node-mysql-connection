@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/confuser/node-mysql-connection.png?branch=master)](https://travis-ci.org/confuser/node-mysql-connection)
 [![Coverage Status](https://coveralls.io/repos/confuser/node-mysql-connection/badge.png?branch=master)](https://coveralls.io/r/confuser/node-mysql-connection?branch=master)
 
+**This is now redundant, use mysql/mysql2's inbuilt `pool.query` instead!**
+
 An abstraction of mysql2 pooling for simple queries.
 
 ## Installation
